@@ -26,12 +26,6 @@
             <artifactId>spotbugs-maven-plugin</artifactId>
             <version>4.5.2.0</version>
         </dependency>
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.22</version>
-                <scope>provided</scope>
-            </dependency>
     </dependencies>
 
     <build>
@@ -80,7 +74,7 @@
                                         <limit>
                                             <counter>BRANCH</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>0.6</minimum>
+                                            <minimum>0.8</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
