@@ -27,8 +27,8 @@ class RadioTest {
     @Test
     public void setCurrentStationBetweenLimitTest() {
         Radio radio = new Radio();
-        radio.setCurrentStation(7);
-        int expected = 7;
+        radio.setCurrentStation(8);
+        int expected = 8;
         int actual = radio.getCurrentStation();
         assertEquals(expected, actual);
     }
