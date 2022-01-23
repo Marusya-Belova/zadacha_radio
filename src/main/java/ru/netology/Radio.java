@@ -21,14 +21,14 @@ public class Radio {
         if (currentStation < minCurrentStation) {
             return;
         }
-        if (currentStation > maxCurrentStation) {
+        if (currentStation > countStation - 1) {
             return;
         }
         this.currentStation = currentStation;
     }
 
     public void switchToNextStation() {
-        if (currentStation < maxCurrentStation) {
+        if (currentStation < countStation - 1) {
             this.currentStation = currentStation + 1;
         } else {
             this.currentStation = minCurrentStation;
@@ -37,7 +37,7 @@ public class Radio {
 
     public void switchToPrevStation() {
         if (this.currentStation == minCurrentStation) {
-            this.currentStation = maxCurrentStation;
+            this.currentStation = countStation - 1;
         } else {
             this.currentStation = this.currentStation - 1;
         }
