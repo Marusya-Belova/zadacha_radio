@@ -1,10 +1,9 @@
 package ru.netology;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-@Setter
-@Getter
+
+@Data
 
 public class Radio {
 
@@ -79,51 +78,4 @@ public class Radio {
         }
     }
 
-    public void setMinCurrentStation(int minCurrentStation) {
-        this.minCurrentStation = minCurrentStation;
-    }
-
-    public void setCountStation(int countStation) {
-        this.countStation = countStation;
-    }
-
-    public void setMaxCurrentStation(int maxCurrentStation) {
-        this.maxCurrentStation = maxCurrentStation;
-    }
-
-    public void setMinCurrentVolume(int minCurrentVolume) {
-        this.minCurrentVolume = minCurrentVolume;
-    }
-
-    public void setMaxCurrentVolume(int maxCurrentVolume) {
-        this.maxCurrentVolume = maxCurrentVolume;
-    }
-
-    public int getCurrentStation() {
-        return currentStation;
-    }
-
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
-
-    public int getMinCurrentStation() {
-        return minCurrentStation;
-    }
-
-    public int getCountStation() {
-        return countStation;
-    }
-
-    public int getMaxCurrentStation() {
-        return maxCurrentStation;
-    }
-
-    public int getMinCurrentVolume() {
-        return minCurrentVolume;
-    }
-
-    public int getMaxCurrentVolume() {
-        return maxCurrentVolume;
-    }
 }
